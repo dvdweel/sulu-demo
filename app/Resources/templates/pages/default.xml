@@ -46,5 +46,12 @@
                 <title lang="de">Artikel</title>
             </meta>
         </property>
+
+        <property name="description" type="text_editor">
+            <meta>
+                <title lang="en">Description</title>
+                <title lang="de">Description</title>
+            </meta>
+        </property>
     </properties>
 </template>
