@@ -11,7 +11,7 @@ module.exports = function (grunt) {
                 options: {
                     sourcemap: false,
                     sassDir: 'web/bundles/suluadmin/scss/',
-                    specify: ['web/bundles/suluadmin/scss/main.scss'],
+                    specify: ['web/bundles/suluadmin/scss/main.scss', 'web/bundles/suluadmin/scss/todo.scss'],
                     cssDir: 'web/bundles/suluadmin/css/',
                     relativeAssets: false
                 }
@@ -30,10 +30,10 @@ module.exports = function (grunt) {
         },
         watch: {
             scripts: {
-                files: ['js/*.js'],
-                tasks: ['concat', 'uglify', 'compass'],
+                files: ['web/bundles/suluadmin/**'],
+                tasks: ['compass'],
                 options: {
-                    spawn: false,
+                    nospawn: true,
                 },
                 compass: {
                     files: ['web/bundles/suluadmin/scss/{,*/}*.{scss,sass}'],
@@ -44,7 +44,7 @@ module.exports = function (grunt) {
 
     });
 
-    // 3. Where we tell Grunt we plan to use this plug-in.
+    // 2. Where we tell Grunt we plan to use this plug-in.
     grunt.loadNpmTasks('grunt-rev');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-compass');
@@ -53,7 +53,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
-    // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['compass', 'cssmin', 'watch']);
+    // 3. Where we tell Grunt what to do when we type "grunt" into the terminal.
+    grunt.registerTask('default', ['compass','cssmin','watch']);
 
 };
