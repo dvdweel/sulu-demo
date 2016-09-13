@@ -73,6 +73,12 @@ abstract class AbstractKernel extends SuluKernel
             new DTL\Bundle\PhpcrMigrations\PhpcrMigrationsBundle(),
             new Dubture\FFmpegBundle\DubtureFFmpegBundle(),
 
+
+            // website
+            new Sulu\Bundle\ThemeBundle\SuluThemeBundle(),
+            new Liip\ThemeBundle\LiipThemeBundle(),
+            new Client\Bundle\WebsiteBundle\ClientWebsiteBundle(),
+
             // tools
             new Massive\Bundle\BuildBundle\MassiveBuildBundle(),
         ];
