@@ -10,34 +10,10 @@ module.exports = function (grunt) {
             dev: {
                 options: {
                     sourcemap: false,
-                    sassDir: 'web/bundles/suluadmin/scss/',
-                    specify: ['web/bundles/suluadmin/scss/main.scss', 'web/bundles/suluadmin/scss/todo.scss'],
-                    cssDir: 'web/bundles/suluadmin/css/',
+                    sassDir: 'src/Client/Bundle/WebsiteBundle/Resources/public/default/scss/',
+                    specify: ['src/Client/Bundle/WebsiteBundle/Resources/public/default/scss/main.scss'],
+                    cssDir: 'src/Client/Bundle/WebsiteBundle/Resources/public/default/css/',
                     relativeAssets: false
-                }
-            }
-        },
-        cssmin: {
-            target: {
-                files: [{
-                    expand: true,
-                    cwd: 'web/bundles/suluadmin/css/',
-                    src: ['*.css', '!*.min.css'],
-                    dest: 'web/bundles/suluadmin/dist/',
-                    ext: '.min.css'
-                }]
-            }
-        },
-        watch: {
-            scripts: {
-                files: ['web/bundles/suluadmin/**'],
-                tasks: ['compass'],
-                options: {
-                    nospawn: true,
-                },
-                compass: {
-                    files: ['web/bundles/suluadmin/scss/{,*/}*.{scss,sass}'],
-                    tasks: ['compass:dev']
                 }
             }
         }
@@ -54,6 +30,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     // 3. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['compass','cssmin','watch']);
+    grunt.registerTask('default', ['compass']);
 
 };
