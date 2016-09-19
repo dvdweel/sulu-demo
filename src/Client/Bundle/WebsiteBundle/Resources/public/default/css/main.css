@@ -1,11 +1,20 @@
+/*
+$blue: darkblue;
+
+*/
+/*
+.logo {
+  background-image: url("http://dierenkliniekmortelplein.nl/wp-content/uploads/2012/02/Kat2.png");
+  background-size: cover;
+}*/
 /*----------------------------------------*/
-/* line 4, ../../../../../../../../vendor/sulu/sulu/src/Sulu/Bundle/AdminBundle/Resources/public/scss/modules/base.scss */
+/* line 3, ../../../../../../../../vendor/sulu/sulu/src/Sulu/Bundle/AdminBundle/Resources/public/scss/modules/base.scss */
 body {
   background-color: #f1f1f1;
 }
 
 /*----------------------------------------*/
-/* line 10, ../../../../../../../../vendor/sulu/sulu/src/Sulu/Bundle/AdminBundle/Resources/public/scss/modules/base.scss */
+/* line 9, ../../../../../../../../vendor/sulu/sulu/src/Sulu/Bundle/AdminBundle/Resources/public/scss/modules/base.scss */
 .control-label {
   padding-left: 5px;
   padding-right: 5px;
@@ -13,35 +22,35 @@ body {
 }
 
 /*----------------------------------------*/
-/* line 18, ../../../../../../../../vendor/sulu/sulu/src/Sulu/Bundle/AdminBundle/Resources/public/scss/modules/base.scss */
+/* line 17, ../../../../../../../../vendor/sulu/sulu/src/Sulu/Bundle/AdminBundle/Resources/public/scss/modules/base.scss */
 input, select {
   font-family: Helvetica, Arial;
 }
 
 /*----------------------------------------*/
-/* line 25, ../../../../../../../../vendor/sulu/sulu/src/Sulu/Bundle/AdminBundle/Resources/public/scss/modules/base.scss */
+/* line 24, ../../../../../../../../vendor/sulu/sulu/src/Sulu/Bundle/AdminBundle/Resources/public/scss/modules/base.scss */
 .pointer {
   cursor: pointer;
 }
 
-/* line 29, ../../../../../../../../vendor/sulu/sulu/src/Sulu/Bundle/AdminBundle/Resources/public/scss/modules/base.scss */
+/* line 28, ../../../../../../../../vendor/sulu/sulu/src/Sulu/Bundle/AdminBundle/Resources/public/scss/modules/base.scss */
 .block {
   display: block;
 }
 
 /*----------------------------------------*/
-/* line 36, ../../../../../../../../vendor/sulu/sulu/src/Sulu/Bundle/AdminBundle/Resources/public/scss/modules/base.scss */
+/* line 35, ../../../../../../../../vendor/sulu/sulu/src/Sulu/Bundle/AdminBundle/Resources/public/scss/modules/base.scss */
 .m-top-1 {
   margin-top: 1px !important;
 }
 
 /*----------------------------------------*/
-/* line 43, ../../../../../../../../vendor/sulu/sulu/src/Sulu/Bundle/AdminBundle/Resources/public/scss/modules/base.scss */
+/* line 42, ../../../../../../../../vendor/sulu/sulu/src/Sulu/Bundle/AdminBundle/Resources/public/scss/modules/base.scss */
 .list-toolbar {
   padding-bottom: 20px;
 }
 
-/* line 48, ../../../../../../../../vendor/sulu/sulu/src/Sulu/Bundle/AdminBundle/Resources/public/scss/modules/base.scss */
+/* line 47, ../../../../../../../../vendor/sulu/sulu/src/Sulu/Bundle/AdminBundle/Resources/public/scss/modules/base.scss */
 .initial-loader {
   width: 100px;
   height: 100px;
@@ -53,12 +62,12 @@ input, select {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 53, ../../../../../../../../vendor/sulu/sulu/src/Sulu/Bundle/AdminBundle/Resources/public/scss/modules/base.scss */
+/* line 52, ../../../../../../../../vendor/sulu/sulu/src/Sulu/Bundle/AdminBundle/Resources/public/scss/modules/base.scss */
 .initial-loader .bouncer {
-  background: #b6b7ca;
+  background: #ccc;
 }
 
-/* line 58, ../../../../../../../../vendor/sulu/sulu/src/Sulu/Bundle/AdminBundle/Resources/public/scss/modules/base.scss */
+/* line 57, ../../../../../../../../vendor/sulu/sulu/src/Sulu/Bundle/AdminBundle/Resources/public/scss/modules/base.scss */
 .highlight-section {
   width: 100%;
   margin-top: -40px;
@@ -71,14 +80,14 @@ input, select {
   content: ' ';
   display: block;
 }
-/* line 68, ../../../../../../../../vendor/sulu/sulu/src/Sulu/Bundle/AdminBundle/Resources/public/scss/modules/base.scss */
+/* line 67, ../../../../../../../../vendor/sulu/sulu/src/Sulu/Bundle/AdminBundle/Resources/public/scss/modules/base.scss */
 .highlight-section .image {
   float: left;
   width: 310px;
   height: 270px;
   overflow: hidden;
 }
-/* line 75, ../../../../../../../../vendor/sulu/sulu/src/Sulu/Bundle/AdminBundle/Resources/public/scss/modules/base.scss */
+/* line 74, ../../../../../../../../vendor/sulu/sulu/src/Sulu/Bundle/AdminBundle/Resources/public/scss/modules/base.scss */
 .highlight-section .content {
   width: calc(100% - 310px);
   float: left;
@@ -89,7 +98,7 @@ input, select {
   content: ' ';
   display: block;
 }
-/* line 80, ../../../../../../../../vendor/sulu/sulu/src/Sulu/Bundle/AdminBundle/Resources/public/scss/modules/base.scss */
+/* line 79, ../../../../../../../../vendor/sulu/sulu/src/Sulu/Bundle/AdminBundle/Resources/public/scss/modules/base.scss */
 .highlight-section .content:only-child {
   width: 100%;
 }
