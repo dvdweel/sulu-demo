@@ -1,0 +1,53 @@
+// base.scss
+$initialLoaderBouncerBackgroundColor: #dc0814;
+$highlightSectionBackgroundColor: #ccc;
+
+// breadcrumb.scss
+$breadcrumbTextColor: #999;
+$breadcrumbHoverTextColor: #000;
+$breadcrumbIconTextColor: #ccc;
+$breadcrumbSeperatorTextColor: #000;
+
+// data-overlay.scss
+$dataOverlayContainerBackgroundColor: #e9e9e9;
+
+// header.scss
+$blueRowBackgroundColor: #dc0814;
+$toolbarRowLeftBackgroundColor: $blueRowBackgroundColor;
+$toolbarRowRightBackgroundColor: $blueRowBackgroundColor;
+$toolbarRowBackTextColor: #fff;
+$toolbarRowLanguageChangerBackgroundColor: #fff;
+$tabsBackgroundColor: #fff;
+
+// headlines.scss
+$contentTitleBorderColor: #ddd;
+
+// layout.scss
+$shrinkBackgroundColor: #21272E;
+$shrinkTextColor: #fff;
+
+// login.scss
+$loginMediaContainerBackgroundColor: #3e3e3e;
+$loginMediaDarkenerBackgroundColor: #000;
+$loginContentContainerBackgroundColor: #dc0814;
+
+$loginMessageTextColor: #fff;
+$loginHuskeyValidateTextColor: #EA524E;
+$loginBoxFrameFooterBtnBorderColor: #fff;
+$loginBoxFrameFooterInactiveBorderColor: #3e3e3e;
+$loginBoxFrameFooterInactiveTextColor: #3e3e3e;
+$loginFormElementBorderColor: #fff;
+$loginNavigatorTextColor: #fff;
+$loginSuccessOverlayBackgroundColor: #5DC774;
+
+// sidebar.scss
+$sidebarBackgroundColor: #fff;
+$sidebarActionTextColor: #000;
+$sidebarLabelTextColor: #666;
+$sidebarBlueIconColor: #fff;
+
+$sidebarBlueIconBackgroundColor: #dc0814;
+$sidebarBlueIconHrBackgroundColor: #ddd;
+
+// sticky-toolbar.scss
+$stickyToolbarBackgroundColor: #f1f1f1;

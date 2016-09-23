@@ -1,8 +1,9 @@
-/*
+/* line 9, ../scss/_images.scss */
 .logo {
-  background-image: url("http://dierenkliniekmortelplein.nl/wp-content/uploads/2012/02/Kat2.png");
+  background-image: url("http://www.freeiconspng.com/uploads/deadpool-icon-png-16.png");
   background-size: cover;
-}*/
+}
+
 /*----------------------------------------*/
 /* line 7, ../../../../../../../../vendor/sulu/sulu/src/Sulu/Bundle/AdminBundle/Resources/public/scss/modules/base.scss */
 body {
@@ -60,7 +61,7 @@ input, select {
 }
 /* line 55, ../../../../../../../../vendor/sulu/sulu/src/Sulu/Bundle/AdminBundle/Resources/public/scss/modules/base.scss */
 .initial-loader .bouncer {
-  background: #ccc;
+  background: #dc0814;
 }
 
 /* line 60, ../../../../../../../../vendor/sulu/sulu/src/Sulu/Bundle/AdminBundle/Resources/public/scss/modules/base.scss */
@@ -488,7 +489,7 @@ input, select {
 /* line 92, ../../../../../../../../vendor/sulu/sulu/src/Sulu/Bundle/AdminBundle/Resources/public/scss/modules/login.scss */
 .sulu-login .content-container {
   float: right;
-  background-color: #52B6CA;
+  background-color: #dc0814;
 }
 /* line 96, ../../../../../../../../vendor/sulu/sulu/src/Sulu/Bundle/AdminBundle/Resources/public/scss/modules/login.scss */
 .sulu-login .content-container .content-box {
@@ -744,7 +745,7 @@ input, select {
 }
 /* line 17, ../../../../../../../../vendor/sulu/sulu/src/Sulu/Bundle/AdminBundle/Resources/public/scss/modules/header.scss */
 .sulu-header .blue-row {
-  background: #52B6CA;
+  background: #dc0814;
   height: 50px;
   width: 100%;
   position: absolute;
@@ -766,7 +767,7 @@ input, select {
 .sulu-header .toolbar-row .left-container {
   display: table-cell;
   width: 50px;
-  background: #52B6CA;
+  background: #dc0814;
   vertical-align: top;
   position: relative;
   z-index: 500;
@@ -792,7 +793,7 @@ input, select {
   vertical-align: top;
   position: relative;
   z-index: 500;
-  background: #52B6CA;
+  background: #dc0814;
 }
 /* line 61, ../../../../../../../../vendor/sulu/sulu/src/Sulu/Bundle/AdminBundle/Resources/public/scss/modules/header.scss */
 .sulu-header .toolbar-row .back {
@@ -914,7 +915,7 @@ input, select {
 .sulu-sidebar .label {
   font-weight: 600;
   margin: 0 0 5px 0;
-  color: #999;
+  color: #666;
 }
 /* line 37, ../../../../../../../../vendor/sulu/sulu/src/Sulu/Bundle/AdminBundle/Resources/public/scss/modules/sidebar.scss */
 .sulu-sidebar .blue-icon {
@@ -922,7 +923,7 @@ input, select {
   height: 20px;
   cursor: pointer;
   color: #fff;
-  background: #52B6CA;
+  background: #dc0814;
   text-align: center;
   border-radius: 2px;
   margin-left: 10px;
