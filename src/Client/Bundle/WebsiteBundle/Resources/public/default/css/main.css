@@ -1,4 +1,13 @@
-/* line 9, ../scss/_images.scss */
+/* line 8, ../scss/_variables.scss */
+.tabs-container .marker {
+  background: #dc0814;
+}
+/* line 11, ../scss/_variables.scss */
+.tabs-container ul li.is-selected a {
+  color: #dc0814;
+}
+
+/* line 10, ../scss/_images.scss */
 .logo {
   background-image: url("http://www.freeiconspng.com/uploads/deadpool-icon-png-16.png");
   background-size: cover;
