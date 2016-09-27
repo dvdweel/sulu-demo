@@ -1,0 +1,250 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Autocomplete Demo</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="stylesheet" href="../../dist/husky.min.css">
+	<style>
+		.container {
+			width: 800px;
+			margin: 30px auto;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="grid">
+		<div class="grid-row">
+			<div class="grid-col-6">
+				<div class="auto-complete-container">
+                    <label>Autocomplete</label>
+                    <form id="mylittleform">
+                        <div id="autocomplete1"
+                             data-type="husky-auto-complete"
+                             data-mapper-property="country"
+                             data-form="true"
+                        ></div>
+                    </form>
+                </div>
+			</div>
+            <div class="grid-col-6">
+                <div class="auto-complete-container">
+                    <label>Autocomplete2</label>
+                    <div id="autocomplete2"></div>
+                </div>
+            </div>
+		</div>
+        <div class="grid-row m-top-30">
+            <div class="grid-col-6">
+                Search for 'A'
+            </div>
+            <div class="grid-col-6">
+                Search for 'B'
+            </div>
+        </div>
+        <div class="grid-row m-top-30">
+            <div class="grid-col-6">
+                <div class="auto-complete-container">
+                    <label>Autocomplete3 (no new Values)</label>
+                    <div id="autocomplete3"></div>
+                </div>
+            </div>
+            <div class="grid-col-6">
+                <div class="auto-complete-container">
+                    <label>Autocomplete4 (Albanien and Frankreich are excluded)</label>
+                    <div id="autocomplete4"></div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-row m-top-30">
+            <div class="grid-col-6">
+                <button id="dynamicExlude">Exclude Altach for 1.</button>
+            </div>
+            <div class="grid-col-6">
+                <button id="overlay">Show overlay with auto-complete</button>
+            </div>
+            <div class="grid-col-6">
+                <button id="set-data">set data</button>
+            </div>
+            <div class="grid-col-6">
+                <button id="get-data">get data</button>
+            </div>
+        </div>
+	</div>
+</div>
+
+<script src="../js/jquery.js"></script>
+<script src="../js/require.js"></script>
+<script src="../js/defaults.js"></script>
+<script type="text/javascript">
+	require.config({
+		baseUrl: '../../',
+        paths: {
+            'form': 'bower_components/husky-validation/dist/validation',
+            'type/husky-auto-complete': 'husky_components/auto-complete/auto-complete-type'
+        }
+	});
+
+    require(['lib/husky', 'form'], function(Husky, Form) {
+		'use strict';
+
+		var app = Husky({
+					debug: {
+						enable: true
+					}
+				}),
+                form = new Form($('#mylittleform')),
+				_ = app.sandbox.util._;
+
+
+		app.start([{
+                    name: 'auto-complete@husky',
+                    options: {
+                        el: '#autocomplete1',
+                        instanceName: 'I1',
+                        prefetchUrl: 'http://husky.lo:7878/admin/api/autocomplete',
+                        remoteUrl: 'http://husky.lo:7878/admin/api/autocomplete',
+                        suggestionIcon: 'tag',
+                        autoCompleteIcon: 'tag',
+                        footerContent: 'Hallo',
+                        fields: [
+                            {
+                                id: 'id',
+                                width: '130px'
+                            },
+                            {
+                                id: 'name',
+                                width: '250px'
+                            },
+                            {
+                                id: 'country',
+                                width: '200px'
+                            }
+                        ],
+                        localData: [{id: 89, name: 'Albanien das Land der Kämpfer und der Träumer die Kämpften um Albanien', country: 'Deutschland'}, {id: 77, name: 'Altach', country: 'Deutschland'}, {id: 899, name: 'Andelsbuch', country: 'Deutschland'}]
+                    }
+                },
+                {
+                    name: 'auto-complete@husky',
+                    options: {
+                        el: '#autocomplete2',
+                        instanceName: 'I2',
+                        prefetchUrl: 'http://husky.lo:7878/admin/api/autocomplete',
+                        remoteUrl: 'http://husky.lo:7878/admin/api/autocomplete',
+                        suggestionIcon: 'tag',
+                        localData: [{id: 81, name: 'Brüssel'}, {id: 71, name: 'Bern'}, {id: 891, name: 'Berlin'}]
+                    }
+                },
+                {
+                    name: 'auto-complete@husky',
+                    options: {
+                        el: '#autocomplete3',
+                        instanceName: 'I3',
+                        prefetchUrl: 'http://husky.lo:7878/admin/api/autocomplete',
+                        remoteUrl: 'http://husky.lo:7878/admin/api/autocomplete',
+                        suggestionIcon: 'tag',
+                        noNewValues: true,
+                        localData: [{id: 89, name: 'Albanien'}, {id: 77, name: 'Altach'}, {id: 899, name: 'Andelsbuch'}]
+                    }
+                },
+                {
+                    name: 'auto-complete@husky',
+                    options: {
+                        el: '#autocomplete4',
+                        instanceName: 'I4',
+                        prefetchUrl: 'http://husky.lo:7878/admin/api/autocomplete',
+                        remoteUrl: 'http://husky.lo:7878/admin/api/autocomplete',
+                        suggestionIcon: 'tag',
+                        excludes: [{id: 89, name: null}, {id: null, name: 'Frankreich'}],
+                        localData: [{id: 89, name: 'Albanien'}, {id: 77, name: 'Altach'}, {id: 899, name: 'Andelsbuch'}]
+                    }
+                    }]).then(function() {
+			app.logger.log('Aura started...');
+		});
+
+        $('#dynamicExlude').on('click', function() {
+           app.sandbox.emit('husky.auto-complete.I1.set-excludes', ['Altach']);
+        });
+
+        $('#overlay').on('click', function() {
+            var overlayContent = [
+                '<div class="grid">',
+                '   <div class="grid-row">',
+                '       <div class="form-group">',
+                '           <label for="autocomplete5" class="required">A label</label>',
+                '           <div id="autocomplete5"></div>',
+                '       </div>',
+                '   </div>',
+                '   <div class="grid-row">',
+                '       <div id="addon-price-list"></div>',
+                '   </div>',
+                '</div>'
+            ].join('');
+
+            var $overlay = $('<div>');
+            $('body').append($overlay);
+
+            app.sandbox.start([
+                {
+                    name: 'overlay@husky',
+                    options: {
+                        el: $overlay,
+                        supportKeyInput: false,
+                        title: 'Overlay title',
+                        openOnStart: true,
+                        removeOnClose: true,
+                        instanceName: 'auto-complete-overlay',
+                        data: $(overlayContent)
+                    }
+                }
+            ]).then(function() {
+                app.sandbox.start([
+                    {
+                        name: 'auto-complete@husky',
+                        options: {
+                            el: '#autocomplete5',
+                            instanceName: 'I5',
+                            prefetchUrl: 'http://husky.lo:7878/admin/api/autocomplete',
+                            remoteUrl: 'http://husky.lo:7878/admin/api/autocomplete',
+                            suggestionIcon: 'tag',
+                            noNewValues: true,
+                            localData: [{id: 89, name: 'Albanien'}, {id: 77, name: 'Altach'}, {id: 899, name: 'Andelsbuch'}]
+                        }
+                    }
+                ]);
+            });
+        });
+
+        $('#set-data').on('click', function() {
+            form.initialized.then(function() {
+                form.mapper.setData({
+                    country: {
+                        id: 3,
+                        name: "USA"
+                    }
+                }).then(
+                    function() {
+                        // console.log('resolved setdata');
+                    }
+                );
+            });
+        });
+
+        $('#get-data').on('click', function() {
+            alert(JSON.stringify(form.mapper.getData()));
+        });
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Husky Label Demo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="../../dist/husky.min.css">
+    <style>
+        body {
+            overflow: auto;
+        }
+        .container {
+            padding: 30px 0 0 30px;
+        }
+
+        .success-icon-container {
+            width: 250px;
+            height: 100px;
+        }
+
+        .success-icon-container-small {
+            width: 50px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Husky Label Demo</h1>
+
+    <div class="grid">
+        <div class="grid-row">
+            <div class="grid-col-6">
+                <div id="errorLabel"></div>
+            </div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-col-6">
+                <div id="successLabel"></div>
+            </div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-col-6">
+                <div id="warningLabelWithoutTitle"></div>
+                <div id="warningLabel"></div>
+                <div id="warningLabelLong"></div>
+            </div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-col-6">
+                <div id="warningLabelSmall"></div>
+                <div id="warningLabelSmallWithoutClose"></div>
+            </div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-col-6">
+                <div id="warningLabelSmallWithButtons"></div>
+                <div id="warningLabelWithButtons"></div>
+            </div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-col-6">
+                <div class="success-icon-container">
+                    <div id="successIconLabel"></div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-col-6">
+                <div class="success-icon-container-small no-label-text">
+                    <div id="successIconLabelSmall"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/jquery.js"></script>
+<script src="../js/require.js"></script>
+<script src="../js/defaults.js"></script>
+
+<script type="text/javascript">
+    require.config({
+        baseUrl: '../../'
+    });
+
+    require(['lib/husky'], function(Husky) {
+        'use strict';
+
+        var app = Husky({debug: {enable: true}}),
+            _ = app.sandbox.util._;
+
+        app.start([{
+            name: 'label@husky',
+            options: {
+                el: '#errorLabel',
+                type: 'ERROR',
+                autoVanish: false,
+                description: 'This is a neat error-label',
+                instanceName: 'error',
+                closeCallback: function() {
+                    console.log('You closed a husky-error-label');
+                }
+            }
+        },
+            {
+                name: 'label@husky',
+                options: {
+                    el: '#successLabel',
+                    type: 'SUCCESS',
+                    autoVanish: false,
+                    instanceName: 'success',
+                    description: 'This is a neat success-label'
+                }
+            },
+            {
+                name: 'label@husky',
+                options: {
+                    el: '#warningLabelWithoutTitle',
+                    type: 'WARNING',
+                    autoVanish: false,
+                    instanceName: 'warning',
+                    title: '',
+                    description: 'This is a neat warning-label without a title'
+                }
+            },
+            {
+                name: 'label@husky',
+                options: {
+                    el: '#warningLabel',
+                    type: 'WARNING',
+                    autoVanish: false,
+                    instanceName: 'warning',
+                    description: 'This is a neat warning-label'
+                }
+            },
+            {
+                name: 'label@husky',
+                options: {
+                    el: '#warningLabelLong',
+                    type: 'WARNING',
+                    autoVanish: false,
+                    instanceName: 'warning',
+                    description: 'This is a neat warning-label<br/>including multiple lines'
+                }
+            },
+            {
+                name: 'label@husky',
+                options: {
+                    el: '#warningLabelSmall',
+                    type: 'WARNING',
+                    autoVanish: false,
+                    instanceName: 'warning',
+                    description: 'This is a neat warning-label',
+                    additionalLabelClasses: 'small'
+                }
+            },
+            {
+                name: 'label@husky',
+                options: {
+                    el: '#warningLabelSmallWithoutClose',
+                    type: 'WARNING',
+                    autoVanish: false,
+                    instanceName: 'warning',
+                    description: 'This is a neat warning-label',
+                    additionalLabelClasses: 'small',
+                    hasClose: false
+                }
+            },
+            {
+                name: 'label@husky',
+                options: {
+                    el: '#warningLabelSmallWithButtons',
+                    type: 'WARNING',
+                    autoVanish: false,
+                    instanceName: 'warning-small-buttons',
+                    description: 'This is a neat warning-label',
+                    additionalLabelClasses: 'small',
+                    hasClose: false,
+                    buttons: [
+                        {
+                            id: 'critical-operation',
+                            title: 'Critical operation',
+                            skin: 'critical',
+                            onClick: function() {
+                                app.sandbox.emit('husky.label.warning-small-buttons.loading');
+                                _.delay(function() {
+                                    app.sandbox.emit('husky.label.warning-small-buttons.reset');
+                                }, 2000);
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                name: 'label@husky',
+                options: {
+                    el: '#warningLabelWithButtons',
+                    type: 'WARNING',
+                    autoVanish: false,
+                    instanceName: 'warning-buttons',
+                    description: 'This is a neat warning-label',
+                    hasClose: true,
+                    buttons: [
+                        {
+                            id: 'very-critical',
+                            title: 'Very critical',
+                            skin: 'critical',
+                            onClick: function() {
+                                app.logger.log('Very critical clicked');
+                            }
+                        },
+                        {
+                            id: 'more-critical',
+                            title: 'Even more critical',
+                            skin: 'critical',
+                            onClick: function() {
+                                app.logger.log('Even more critical clicked');
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                name: 'label@husky',
+                options: {
+                    el: '#successIconLabel',
+                    type: 'SUCCESS_ICON',
+                    autoVanish: false,
+                    instanceName: 'success',
+                    description: 'Data saved'
+                }
+            },
+            {
+                name: 'label@husky',
+                options: {
+                    el: '#successIconLabelSmall',
+                    type: 'SUCCESS_ICON',
+                    autoVanish: false,
+                    instanceName: 'success',
+                    description: 'Saved'
+                }
+            }
+        ]).then(function() {
+            app.logger.log('Aura started...');
+        });
+
+        window.app = app;
+    });
+</script>
+</body>
+</html>

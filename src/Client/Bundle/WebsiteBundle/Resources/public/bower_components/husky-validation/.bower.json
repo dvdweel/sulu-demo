@@ -1,0 +1,26 @@
+{
+  "name": "massiveart/husky-validation",
+  "main": "js/form.js",
+  "description": "Formhandler for the Sulu 2.0 CMF. It handles validation and data-mapping.",
+  "license": "MIT",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {
+    "requirejs": "2.1.*",
+    "jquery": "2.1.*",
+    "globalize": "0.1.*",
+    "underscore": "~1.5.1"
+  },
+  "homepage": "https://github.com/massiveart/husky-validation",
+  "_release": "c3c1327fa9",
+  "_resolution": {
+    "type": "branch",
+    "branch": "develop",
+    "commit": "c3c1327fa9e888a329deb5f48a749558448304dc"
+  },
+  "_source": "https://github.com/massiveart/husky-validation.git",
+  "_target": "develop",
+  "_originalSource": "husky-validation"
+}

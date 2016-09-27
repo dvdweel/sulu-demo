@@ -1,0 +1,84 @@
+//
+// Custom Icons which need to by styled separately
+// --------------------------------------------------
+
+.fa-husky-publish {
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        border: 3px solid $white;
+        background: $green;
+        font-size: medium!important;
+        margin-bottom: -1px;
+    }
+}
+
+.fa-husky-unpublish {
+   &::after {
+     content: "";
+     display: inline-block;
+     width: 9px;
+     height: 9px;
+     border-radius: 50%;
+     border: 3px solid $white;
+     background: $red;
+     font-size: medium!important;
+     margin-bottom: -1px;
+   }
+ }
+
+.fa-husky-deactivated {
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        border: 3px solid $white;
+        font-size: medium!important;
+        margin-bottom: -1px;
+    }
+}
+
+.fa-husky-test {
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    border: 3px solid $white;
+    background: $yellow;
+    font-size: medium!important;
+    margin-bottom: -1px;
+  }
+}
+
+.fa-shadow-node:before { content: $fa-var-share; }
+.fa-internal-link:before { content: $fa-var-link; }
+
+.draft-icon,
+.published-icon {
+    display: inline-block;
+    border: 1px $white solid;
+    border-radius: 6px;
+    width: 11px;
+    height: 11px;
+    margin-top: 4px;
+}
+
+.draft-icon {
+    margin-right: 5px;
+    background-color: $infoColor;
+}
+
+.published-icon {
+    background-color: $green;
+}
+
+.published-icon + .draft-icon {
+    margin-left: -6px;
+}

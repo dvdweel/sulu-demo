@@ -1,0 +1,307 @@
+//
+// Overlay
+// --------------------------------------------------
+@import "compass/css3/transition";
+
+.husky-overlay-container {
+    width: $overlayContainerWidthSmall;
+    border-radius: $borderRadius;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1000;
+    text-align: left;
+    white-space: normal;
+    background-color: $grayLightMedium2;
+    @include standard-box-shadow;
+
+    &.right-aligned {
+        left: auto;
+        right: 0;
+    }
+
+    &.overflow-hidden {
+        /* FIXME select in slides hidden */
+        overflow: hidden;
+    }
+
+    &.wide {
+        width: $overlayContainerWidthMedium;
+
+        .slides .slide {
+            width: $overlayContainerWidthMedium;
+
+            .overlay-footer {
+                width: $overlayContainerWidthMedium;
+            }
+        }
+    }
+
+    &.responsive-width {
+        @media(min-width: 880px) {
+            &, .slides .slide, .slides .slide .overlay-footer {
+                width: $overlayContainerWidthMedium;
+            }
+        }
+
+        @media(min-width: 1024px) {
+            &, .slides .slide, .slides .slide .overlay-footer {
+                width: $overlayContainerWidthLarge;
+            }
+        }
+
+        @media(min-width: 1600px) {
+            &, .slides .slide, .slides .slide .overlay-footer {
+                width: $overlayContainerWidthExtraLarge;
+            }
+        }
+    }
+
+    &.alert {
+        .overlay-header {
+            height: 70px;
+            .title {
+                line-height: normal;
+                padding-top: 40px;
+            }
+        }
+    }
+
+    .slides {
+        position: relative;
+        left: 0px;
+        white-space: nowrap;
+        padding-bottom: 70px;
+        @include transition(left, 500ms);
+
+        .slide {
+            display: inline-block;
+            vertical-align: top;
+            width: $overlayContainerWidthSmall;
+        }
+
+        &.no-animation {
+            @include transition(none);
+        }
+    }
+}
+
+.overlay-header {
+    position: relative;
+    background: $white;
+    border-radius: $borderRadius $borderRadius 0 0;
+    height: 100px;
+
+    .title {
+        color: $grayLight;
+        font-size: 24px;
+        vertical-align: middle;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        padding: 0 20px;
+        text-overflow: ellipsis;
+        line-height: 100px;
+        text-align: center;
+    }
+
+    &.with-sub-title {
+        .title {
+            line-height: 75px;
+        }
+
+        .sub-title {
+            font-size: $smallFontSize;
+            color: $grayLight;
+            margin-top: -23px;
+            text-align: center;
+        }
+    }
+}
+
+.overlay-subheader {
+    background: $white;
+    padding: 0 20px;
+    border-top: 1px solid $grayLightMedium2;
+    width: 100%;
+    height: 51px;
+    position: relative;
+    display: table;
+    table-layout: auto;
+
+    .overlay-tabs {
+        display: table-cell;
+        width: 100%;
+        max-width: 0;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .panel {
+        display: table-cell;
+        white-space: nowrap;
+        padding-left: 20px;
+        border-left: 1px solid $grayLightMedium2;
+    }
+
+    .panel-content  {
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+        border-right: 1px solid $grayLightMedium2;
+        padding-right: 20px;
+        margin-right: 20px;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+
+        & > * {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+    .language-changer {
+        display: inline-block;
+        width: 80px;
+        height: 100%;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+
+        & > * {
+            width: 100%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+}
+
+.overlay-footer {
+    padding: 20px;
+    border-top: 1px solid $borderColor;
+    text-align: center;
+    border-radius: 0 0 $borderRadius $borderRadius;
+    width: $overlayContainerWidthSmall;
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    @include clear-float;
+
+    .btn {
+        display: inline-block;
+        min-width: 115px;
+        margin: 0 auto;
+        padding: 0;
+
+        &.left {
+            float: left;
+            margin-right: 0;
+        }
+        &.right {
+            float: right;
+            margin-left: 20px;
+            margin-right: 0;
+        }
+        &.just-text {
+            background: transparent;
+            color: $black;
+            font-size: $smallFontSize;
+        }
+    }
+
+    &.center .btn {
+        margin: 0 auto;
+    }
+
+    &.left .btn {
+        float: left;
+        margin-right: 20px;
+    }
+
+    &.right .btn {
+        float: right;
+        margin-left: 20px;
+    }
+
+    .loader {
+        float: right;
+        margin-left: 20px;
+        margin-right: 0;
+        width: 115px;
+    }
+}
+
+.overlay-content {
+    position: relative;
+    white-space: normal;
+
+    .message {
+        padding: 10px 105px 40px;
+        background: $white;
+        font-size: $bigFontSize;
+        color: $grayLight;
+        text-align: center;
+        ul {
+            border: 1px solid $grayLighterer;
+            list-style-position: inside;
+            text-align: left;
+            padding: 10px;
+        }
+    }
+
+    &.content-spacing {
+        padding: 20px;
+    }
+}
+
+.husky-overlay-wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    text-align: center;
+
+    .husky-overlay-scroll-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        white-space: nowrap;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+            margin-right: -0.25em;
+        }
+    }
+
+    .husky-overlay-backdrop {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    // workaround for overlapping bug:
+    // Only in chrome: if the overlay is displayed on a page which contains an iframe which contains
+    // elements with the translate3d transform-property things get messed up. This line fixes the issue
+    -webkit-transform: translate3d(0, 0, 0);
+    // workaround (end)
+}

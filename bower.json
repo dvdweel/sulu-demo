@@ -1,0 +1,17 @@
+{
+  "name": "sulu-demo",
+  "description": "Welcome to the Sulu Minimal Edition - a fully-functional Sulu application that you can use as the skeleton for your new applications.",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "https://github.com/dvdweel/sulu-demo",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "husky": "0.25.*"
+  }
+}

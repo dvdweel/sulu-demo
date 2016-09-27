@@ -1,0 +1,58 @@
+//
+// Matrices
+// --------------------------------------------------
+
+.table.matrix {
+    margin-bottom: 30px;
+
+    th {
+        vertical-align: middle;
+        line-height: 22px;
+
+        &.general {
+            width: 140px;
+            font-weight: bold;
+        }
+
+        &.section {
+            width: 180px;
+        }
+    }
+
+    td {
+        &.value {
+            margin: 0;
+            border: none;
+            white-space: nowrap;
+        }
+
+        &.all {
+            text-align: left;
+            padding-left: 16px;
+            color: $black;
+        }
+        &.section {
+            color: $grayLight;
+        }
+    }
+
+    .matrix-icon {
+        border: 1px solid $black;
+        color: $black;
+        border-radius: 12px;
+
+        width: 24px;
+        height: 24px;
+        line-height: 22px;
+        margin: 3px;
+
+        display: inline-block;
+        text-align: center;
+
+        &.is-active {
+            color: $white;
+            border-color: $green;
+            background-color: $green;
+        }
+    }
+}

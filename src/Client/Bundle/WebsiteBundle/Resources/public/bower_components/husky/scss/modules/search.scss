@@ -1,0 +1,124 @@
+//
+// Tabs
+// --------------------------------------------------
+
+.search-container {
+    $slideCollapsedWidth: 130px;
+    $slideExpandedWidth: 210px;
+    $slideDuration: 250ms;
+
+    position: relative;
+
+    a {
+        color: #3e3e3e;
+    }
+
+    &.search-slide {
+      @include single-transition(width, $slideDuration);
+    }
+    &.slide-collapsed {
+        width: $slideCollapsedWidth;
+    }
+    &.slide-expanded {
+        width: $slideExpandedWidth;
+    }
+
+    .search-input {
+        padding-left: 40px;
+        padding-right: 10px;
+        border: 0;
+        margin: 0;
+        background-color: $grayLight;
+        color: #3e3e3e;
+
+        @include input-placeholder {
+            color: #3e3e3e;
+        }
+
+        &:focus {
+            background-color: $white;
+        }
+    }
+
+    .search-icon, .remove-icon {
+        background: transparent;
+        border: 0;
+        display: inline-block;
+        line-height: 30px;
+        vertical-align: middle;
+        text-decoration: none;
+        cursor: pointer;
+        outline: 0;
+    }
+
+    .search-icon {
+        position: absolute;
+        padding-left: 8px;
+        padding-right: 15px;
+        font-size: 16px;
+    }
+
+    .remove-icon {
+        display: none;
+        position: absolute;
+        right: 10px;
+        background-color: $white;
+        padding-left: 3px;
+    }
+
+    /** look and feel **/
+
+    &.gray {
+        .search-icon {
+          font-size: 16px;
+          color: $searchBarGray;
+        }
+        .remove-icon {
+          color: $searchBarGray;
+          background-color: transparent;
+        }
+        .search-input {
+            background-color: $searchBarGray;
+            @include input-placeholder {
+              color: $searchBarGray;
+            }
+        }
+        &.focus {
+          .search-input {
+            background-color: $white;
+          }
+          .search-icon,
+          .remove-icon {
+            color: #3e3e3e;
+          }
+        }
+    }
+
+    // white
+    &.white {
+        .search-input {
+            background-color: $white;
+            &:focus {
+                background-color: $white;
+            }
+        }
+    }
+
+    &.small {
+        .search-input {
+            font-size: 12px;
+        }
+        .search-icon {
+            font-size: 12px;
+        }
+    }
+
+    &.outline {
+        .input-round {
+            border: 1px #999 solid;
+        }
+    }
+
+}
+
+

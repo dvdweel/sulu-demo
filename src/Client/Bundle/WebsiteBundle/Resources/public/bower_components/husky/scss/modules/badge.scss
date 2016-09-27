@@ -1,0 +1,32 @@
+.badge {
+    vertical-align: middle;
+    display: inline-block;
+    background: $accentColor;
+    padding: 0px 2px;
+    margin-top: -3px;
+    color: $white;
+    border-radius: $borderRadius;
+    font-size: $reallySmallFontSize;
+    line-height: 15px;
+}
+
+$badgeColors: (
+    "none": transparent,
+    "black": $black,
+    "white": white,
+    "gray-light": $grayLight,
+    "gray": $gray,
+    "yellow": $yellow,
+    "blue": $blue,
+    "red": $red
+);
+
+@each $name, $color in $badgeColors {
+    .badge-#{$name} {
+        background-color: $color;
+    }
+
+    .badge-color-#{$name} {
+        color: $color;
+    }
+}

@@ -1,0 +1,243 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Content types Demo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="../../dist/husky.min.css">
+    <style type="text/css">
+        body {
+            padding: 50px 0 0 50px;
+            width: 820px;
+        }
+    </style>
+</head>
+<body>
+<h1>Content types - style demo</h1>
+
+<div class="grid sortable">
+    <h2 class="light">Content blocks</h2>
+    <div class="text-blocks-header">
+        <div id="sort-text-blocks-block" tabindex="0" class="text-blocks-toggle-btn">Collapse all textblocks
+        </div>
+        <div id="edit-text-blocks-block" tabindex="0" class="text-blocks-toggle-btn hidden">Edit
+            text blocks
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="text-block typ1-element block-element">
+        <div class="move"></div>
+        <div class="container grid">
+            <div class="text-block-controls">
+                <div class="fa-eye-slash options-collapse"></div>
+                <div class="fa-times options-remove"></div>
+            </div>
+            <div class="block block-block grid-row small">
+                <div class="grid-col-12 floating form-group">
+                    <label for="block-title0" class="pointer " title="">
+                        Title
+                    </label>
+
+                    <input id="block-title0" type="text"
+                           class="form-element preview-update trigger-save-button hide-in-sortmode husky-validate"
+                           data-mapper-property="title" placeholder="">
+
+                    <div class="block-content" data-sort-mode-id="block-title0"></div>
+                </div>
+                <div class="grid-col-12 floating form-group">
+                    <label for="block-textarea1" class="pointer " title="">
+                        Description
+                    </label>
+
+                    <textarea id="block-textarea1" class="form-element"></textarea>
+
+                    <div class="block-content" data-sort-mode-id="block-title0"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-block collapsed typ1-element block-element">
+        <div class="move"></div>
+        <div class="collapsed-container">
+            <div class="type">Block with image</div>
+            <div class="title">This is the title</div>
+            <div class="image">
+                <img src="http://lorempixel.com/50/50/"/>
+            </div>
+            <div class="text">Des is a gmahde Wiesn und i moan scho aa, Bladl Radler. Trachtnhuat Wurscht Blosmusi
+                Weißwiaschd nia Stubn a bissal measi, wolpern. Des is a gmahde Wiesn und i moan scho aa, Bladl Radler.
+                Trachtnhuat Wurscht Blosmusi Weißwiaschd nia Stubn a bissal measi, wolpern.</div>
+        </div>
+    </div>
+
+    <div class="text-block collapsed typ1-element block-element">
+        <div class="move"></div>
+        <div class="collapsed-container">
+            <div class="type">Block with image</div>
+            <div class="title">This is the title</div>
+            <div class="image"></div>
+            <div class="text">Des is a gmahde Wiesn und i moan scho aa, Bladl Radler. Trachtnhuat Wurscht Blosmusi
+                Weißwiaschd nia Stubn a bissal measi, wolpern. Des is a gmahde Wiesn und i moan scho aa, Bladl Radler.
+                Trachtnhuat Wurscht Blosmusi Weißwiaschd nia Stubn a bissal measi, wolpern.</div>
+        </div>
+    </div>
+
+    <div class="text-block collapsed typ1-element block-element">
+        <div class="move"></div>
+        <div class="collapsed-container">
+            <div class="type">Block with image</div>
+            <div class="title">This is the title</div>
+            <div class="image">
+                <img src="http://lorempixel.com/50/50/"/>
+            </div>
+            <div class="text hidden"></div>
+        </div>
+    </div>
+
+    <div class="text-block collapsed typ1-element block-element">
+        <div class="move"></div>
+        <div class="collapsed-container">
+            <div class="type"></div>
+            <div class="title">This is the title</div>
+            <div class="image">
+                <img src="http://lorempixel.com/50/50/"/>
+            </div>
+            <div class="text">Des is a gmahde Wiesn und i moan scho aa, Bladl Radler. Trachtnhuat Wurscht Blosmusi
+                Weißwiaschd nia Stubn a bissal measi, wolpern. Des is a gmahde Wiesn und i moan scho aa, Bladl Radler.
+                Trachtnhuat Wurscht Blosmusi Weißwiaschd nia Stubn a bissal measi, wolpern.</div>
+        </div>
+    </div>
+
+    <div class="text-block collapsed typ1-element block-element">
+        <div class="move"></div>
+        <div class="collapsed-container">
+            <div class="type">Block with image</div>
+            <div class="title">This is the title</div>
+            <div class="image"></div>
+            <div class="text hidden"></div>
+        </div>
+    </div>
+
+    <div class="text-block collapsed typ1-element block-element">
+        <div class="move"></div>
+        <div class="collapsed-container">
+            <div class="type">Block with image</div>
+            <div class="title"></div>
+            <div class="image">
+                <img src="http://lorempixel.com/50/50/"/>
+            </div>
+            <div class="text hidden"></div>
+        </div>
+    </div>
+
+    <div class="text-block collapsed typ1-element block-element">
+        <div class="move"></div>
+        <div class="collapsed-container">
+            <div class="type hidden">Block with image</div>
+            <div class="title"></div>
+            <div class="image"></div>
+            <div class="text">Des is a gmahde Wiesn und i moan scho aa, Bladl Radler. Trachtnhuat Wurscht Blosmusi
+                Weißwiaschd nia Stubn a bissal measi, wolpern. Des is a gmahde Wiesn und i moan scho aa, Bladl Radler.
+                Trachtnhuat Wurscht Blosmusi Weißwiaschd nia Stubn a bissal measi, wolpern.</div>
+        </div>
+    </div>
+
+    <div class="text-block collapsed typ1-element block-element">
+        <div class="move"></div>
+        <div class="collapsed-container empty">
+            <div class="type">Block with image</div>
+            <div class="title"></div>
+            <div class="image"></div>
+            <div class="text hidden"></div>
+        </div>
+    </div>
+
+    <div class="text-block typ1-element block-element">
+        <div class="move"></div>
+        <div class="container grid">
+            <div class="text-block-controls">
+                <div class="fa-eye-slash options-collapse"></div>
+                <div class="fa-times options-remove"></div>
+            </div>
+            <div class="block block-block grid-row small">
+                <div class="grid-col-12 floating form-group">
+                    <label for="block-title2" class="pointer " title="">
+                        Title
+                    </label>
+
+                    <input id="block-title2" type="text"
+                           class="form-element preview-update trigger-save-button hide-in-sortmode husky-validate"
+                           data-mapper-property="title" placeholder="">
+
+                    <div class="block-content" data-sort-mode-id="block-title0"></div>
+                </div>
+                <div class="grid-col-12 floating form-group">
+                    <label for="block-textarea2" class="pointer " title="">
+                        Description
+                    </label>
+
+                    <textarea id="block-textarea2" class="form-element"></textarea>
+
+                    <div class="block-content" data-sort-mode-id="block-title0"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-block-footer husky-select" id="block-add" style="width: 200px">
+
+        <div class="husky-select-container action">
+            <div class="dropdown-label pointer">
+                <div class="checkbox"><span class="fa-plus-circle icon"></span> <span class="husky-select-label">Add Block</span>
+                </div>
+                <span class="fa-caret-down toggle-icon" style=""></span></div>
+            <div class="grid-row dropdown-list dropdown-shadow husky-select-dropdown-container hidden">
+                <ul class="husky-select-list">
+                    <li data-id="typ1" data-update-label="true">
+                        <div>
+                            <div class="check hidden">
+                                <div class="custom-checkbox no-spacing"><input type="checkbox"
+                                                                               class="form-element is-selected"> <span
+                                    class="icon"></span></div>
+                            </div>
+                            <div class="item-value">Block Type 1</div>
+                        </div>
+                    </li>
+                    <li data-id="typ2" data-update-label="true">
+                        <div>
+                            <div class="check hidden">
+                                <div class="custom-checkbox no-spacing"><input type="checkbox" class="form-element">
+                                    <span class="icon"></span></div>
+                            </div>
+                            <div class="item-value">Block Type 2</div>
+                        </div>
+                    </li>
+                    <li data-id="typ3" data-update-label="true">
+                        <div>
+                            <div class="check hidden">
+                                <div class="custom-checkbox no-spacing"><input type="checkbox" class="form-element">
+                                    <span class="icon"></span></div>
+                            </div>
+                            <div class="item-value">Block Type 3</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
