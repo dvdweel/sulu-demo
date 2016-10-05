@@ -11,6 +11,9 @@ app/maintenance.php
 !/bin/adminconsole
 !/bin/symfony_requirements
 
+# cache
+/.sass-cache
+
 # var
 /var/cache/*
 /var/indexes/*
