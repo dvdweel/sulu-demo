@@ -2766,8 +2766,8 @@ fieldset[disabled] .datepicker table tr td span.active.disabled.active, fieldset
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("fonts/fontawesome/fontawesome-webfont.eot?v=4.4.0");
-  src: url("fonts/fontawesome/fontawesome-webfont.eot?#iefix&v=4.4.0") format("embedded-opentype"), url("fonts/fontawesome/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("fonts/fontawesome/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("fonts/fontawesome/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("fonts/fontawesome/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
+  src: url("../../default/fonts/fontawesome/fontawesome-webfont.eot?v=4.4.0");
+  src: url("../../default/fonts/fontawesome/fontawesome-webfont.eot?#iefix&v=4.4.0") format("embedded-opentype"), url("../../default/fonts/fontawesome/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("../../default/fonts/fontawesome/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("../../default/fonts/fontawesome/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("../../default/fonts/fontawesome/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -7356,7 +7356,7 @@ span.error {
   font-weight: bold;
 }
 
-/* line 35, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 37, ../../bower_components/husky/scss/modules/navigation.scss */
 .section-headline {
   position: relative;
   font-size: 12px;
@@ -7367,12 +7367,12 @@ span.error {
   font-weight: bold;
   cursor: default;
 }
-/* line 45, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 47, ../../bower_components/husky/scss/modules/navigation.scss */
 .section-headline .section-headline-title {
   white-space: nowrap;
 }
 
-/* line 50, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 52, ../../bower_components/husky/scss/modules/navigation.scss */
 .section-headline-divider {
   position: relative;
   margin: 30px 0;
@@ -7380,13 +7380,13 @@ span.error {
   border: 0px;
 }
 
-/* line 57, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 59, ../../bower_components/husky/scss/modules/navigation.scss */
 .husky-navigation {
   height: 100%;
   position: relative;
 }
 
-/* line 62, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 64, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation {
   width: 250px;
   height: 100%;
@@ -7398,14 +7398,14 @@ span.error {
   z-index: 250;
   float: left;
 }
-/* line 73, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 75, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation .navigation-close-icon {
   display: none;
   opacity: 0;
   height: 0;
   -webkit-transform: scale3d(1, 1, 1);
 }
-/* line 80, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 82, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation.collapseIcon .navigation-close-icon {
   position: absolute;
   display: block;
@@ -7422,16 +7422,16 @@ span.error {
   border-radius: 0 0 2px 0;
   opacity: 1;
 }
-/* line 97, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 99, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation.collapsed + .navigation-data-container.expanded {
   width: 250px;
 }
-/* line 101, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 103, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation.disappeared.collapseIcon .navigation-close-icon {
   display: none;
 }
 
-/* line 107, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 109, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-content {
   position: relative;
   height: 100%;
@@ -7441,33 +7441,33 @@ span.error {
   font-size: 14px;
   /*for sticky navigation footer*/
 }
-/* line 115, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 117, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-content a {
   display: inline-block;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.5);
   outline: none;
 }
-/* line 122, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 124, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-content ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 129, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 131, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-content .wrapper {
   min-height: 100%;
   margin-bottom: -121px;
   overflow: hidden;
 }
-/* line 134, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 136, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-content .wrapper:after {
   content: "";
   display: block;
   height: 131px;
 }
 
-/* line 142, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 144, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-header {
   overflow: hidden;
   padding: 35px 20px;
@@ -7475,7 +7475,7 @@ span.error {
   white-space: nowrap;
 }
 
-/* line 149, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 151, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-header-title {
   display: inline-block;
   font-size: 16px;
@@ -7486,7 +7486,7 @@ span.error {
   vertical-align: bottom;
 }
 
-/* line 159, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 161, ../../bower_components/husky/scss/modules/navigation.scss */
 .logo {
   display: inline-block;
   margin-right: 10px;
@@ -7499,30 +7499,30 @@ span.error {
   background-repeat: no-repeat;
 }
 
-/* line 171, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 173, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-search {
   position: relative;
   margin: 0px 20px;
   padding: 10px 0;
   height: 50px;
 }
-/* line 177, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 179, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-search .search-icon {
   opacity: 1;
 }
 
-/* line 183, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 185, ../../bower_components/husky/scss/modules/navigation.scss */
 li.is-active > .navigation-items-toggle a,
 li.is-active > .navigation-subitems-toggle a {
   color: #fff;
 }
-/* line 188, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 190, ../../bower_components/husky/scss/modules/navigation.scss */
 li.is-active > div > a.navigation-settings-icon {
   display: block;
   color: #999;
 }
 
-/* line 194, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 196, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-item-container .navigation-items {
   position: relative;
   top: 0px;
@@ -7532,11 +7532,11 @@ li.is-active > div > a.navigation-settings-icon {
   /* sub-items */
   /* sub-sub-items */
 }
-/* line 201, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 203, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-item-container .navigation-items:hover {
   background-color: #191D22;
 }
-/* line 205, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 207, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-item-container .navigation-items::before {
   content: "";
   display: block;
@@ -7547,37 +7547,37 @@ li.is-active > div > a.navigation-settings-icon {
   height: 100%;
   background: #52B6CA;
 }
-/* line 216, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 218, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-item-container .navigation-items > div {
   position: relative;
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
 }
-/* line 224, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 226, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-item-container .navigation-items.is-active::before {
   width: 5px;
 }
-/* line 227, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 229, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-item-container .navigation-items.is-active .navigation-item-icon,
 .navigation-item-container .navigation-items.is-active .navigation-item-title {
   color: #fff;
 }
-/* line 231, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 233, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-item-container .navigation-items.is-active .navigation-item-title {
   font-size: 16px;
 }
-/* line 236, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 238, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-item-container .navigation-items.is-expanded {
   padding-bottom: 20px;
 }
-/* line 239, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 241, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-item-container .navigation-items.is-expanded .navigation-items-toggle {
   height: inherit;
   padding-bottom: 10px;
   height: 50px;
 }
-/* line 244, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 246, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-item-container .navigation-items.is-expanded > .navigation-items-list {
   display: block;
   opacity: 1;
@@ -7587,7 +7587,7 @@ li.is-active > div > a.navigation-settings-icon {
   -webkit-transition-delay: 75ms;
   transition: opacity 100ms 75ms;
 }
-/* line 253, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 255, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-item-container .navigation-items .navigation-items-list {
   position: absolute;
   left: 0px;
@@ -7605,12 +7605,12 @@ li.is-active > div > a.navigation-settings-icon {
   -webkit-transition: opacity 100ms;
   transition: opacity 100ms;
 }
-/* line 269, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 271, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-item-container .navigation-items ul ul {
   font-size: 12px;
   padding-left: 20px;
 }
-/* line 274, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 276, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-item-container .navigation-items li {
   border-radius: 3px;
   cursor: pointer;
@@ -7619,7 +7619,7 @@ li.is-active > div > a.navigation-settings-icon {
   left: 0px;
   height: 30px;
 }
-/* line 282, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 284, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-item-container .navigation-items li:hover:not(.navigation-subitems) a::before {
   font-size: 12px;
   content: "";
@@ -7632,11 +7632,11 @@ li.is-active > div > a.navigation-settings-icon {
   left: 0px;
   padding-right: 9px;
 }
-/* line 288, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 290, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-item-container .navigation-items li.is-selected a {
   color: white;
 }
-/* line 291, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 293, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-item-container .navigation-items li.is-selected a::before {
   font-size: 12px;
   content: "";
@@ -7649,7 +7649,7 @@ li.is-active > div > a.navigation-settings-icon {
   left: 0px;
   padding-right: 9px;
 }
-/* line 297, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 299, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-item-container .navigation-items li a {
   padding: 0px 0 0px 10px;
   height: 100%;
@@ -7663,18 +7663,18 @@ li.is-active > div > a.navigation-settings-icon {
   /* prohibits height changes on select */
 }
 
-/* line 313, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 315, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-subitems.is-expanded > .navigation-items-list {
   display: block;
 }
-/* line 316, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 318, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-subitems.is-expanded .navigation-subitems-toggle {
   height: inherit;
   padding-bottom: 10px;
   padding-bottom: 0;
 }
 
-/* line 323, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 325, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-item {
   width: 100%;
   display: inline-block;
@@ -7685,7 +7685,7 @@ li.is-active > div > a.navigation-settings-icon {
   height: 100%;
 }
 
-/* line 333, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 335, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-item-title {
   padding-left: 35px;
   height: 100%;
@@ -7697,7 +7697,7 @@ li.is-active > div > a.navigation-settings-icon {
   white-space: nowrap;
 }
 
-/* line 344, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 346, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-item-icon {
   position: absolute;
   top: 0px;
@@ -7708,14 +7708,14 @@ li.is-active > div > a.navigation-settings-icon {
   line-height: 48px;
 }
 
-/* line 354, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 356, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-items-toggle {
   position: relative;
   height: 50px;
   z-index: 200;
 }
 
-/* line 360, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 362, ../../bower_components/husky/scss/modules/navigation.scss */
 li a.navigation-settings-icon {
   width: auto;
   position: absolute;
@@ -7725,7 +7725,7 @@ li a.navigation-settings-icon {
   display: none;
 }
 
-/* line 369, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 371, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-toggle-icon {
   width: auto;
   position: absolute;
@@ -7734,28 +7734,28 @@ li a.navigation-settings-icon {
   font-size: 12px;
 }
 
-/* line 377, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 379, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-subitems-toggle {
   padding: 2px 0 2px;
   position: relative;
   height: 30px;
 }
-/* line 382, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 384, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-subitems-toggle .navigation-toggle-icon {
   top: 3px;
 }
-/* line 386, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 388, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-subitems-toggle .navigation-item {
   padding: 0px;
 }
 
-/* line 392, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 394, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation footer {
   padding: 15px 20px 15px 23px;
   height: 121px;
   background-color: #191D22;
 }
-/* line 397, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 399, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation footer .user {
   font-size: 14px;
   color: #fff;
@@ -7764,7 +7764,7 @@ li a.navigation-settings-icon {
   white-space: nowrap;
   cursor: pointer;
 }
-/* line 405, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 407, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation footer .user .pic {
   color: #fff;
   text-align: right;
@@ -7772,13 +7772,13 @@ li a.navigation-settings-icon {
   display: inline-block;
   margin-right: 15px;
 }
-/* line 412, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 414, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation footer .user .name {
   display: inline-block;
   vertical-align: middle;
   padding-bottom: 5px;
 }
-/* line 419, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 421, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation footer .options {
   height: 20px;
   margin-bottom: 15px;
@@ -7788,16 +7788,16 @@ li a.navigation-settings-icon {
   top: 0px;
   left: 0px;
 }
-/* line 428, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 430, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation footer .options .locale-dropdown {
   color: #000;
   width: 60px;
 }
-/* line 433, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 435, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation footer .options .dropdown-list {
   min-width: 150px;
 }
-/* line 437, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 439, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation footer .options .logout {
   color: white;
   cursor: pointer;
@@ -7809,14 +7809,14 @@ li a.navigation-settings-icon {
   top: 0px;
   right: 0px;
 }
-/* line 449, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 451, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation footer .version {
   padding-left: 35px;
   font-size: 10px;
   color: #878787;
   white-space: nowrap;
 }
-/* line 455, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 457, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation footer .version a {
   color: #fff;
   text-decoration: none;
@@ -7825,20 +7825,20 @@ li a.navigation-settings-icon {
 /**
  * MINIFIED NAVIGATION
  */
-/* line 466, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 468, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation.collapsed {
   width: 50px;
   overflow-x: hidden;
 }
-/* line 470, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 472, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation.collapsed .navigation-header {
   padding-left: 10px;
 }
-/* line 474, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 476, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation.collapsed .navigation-header-title {
   opacity: 0;
 }
-/* line 478, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 480, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation.collapsed .section-headline {
   opacity: 0;
   height: 0;
@@ -7847,23 +7847,23 @@ li a.navigation-settings-icon {
   margin-top: 0;
   margin-bottom: 0;
 }
-/* line 487, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 489, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation.collapsed .navigation-search.search-container {
   margin: 0;
   margin-left: 8px;
 }
-/* line 491, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 493, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation.collapsed .navigation-search.search-container input {
   opacity: 0;
   z-index: 0;
 }
-/* line 495, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 497, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation.collapsed .navigation-search.search-container .search-icon {
   opacity: 1;
   z-index: 100;
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 504, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 506, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation.collapsed * .navigation-settings-icon,
 .navigation.collapsed * .navigation-toggle-icon, .navigation.collapsed .is-active .navigation-settings-icon,
 .navigation.collapsed .is-active .navigation-toggle-icon, .navigation.collapsed .is-expanded .navigation-settings-icon,
@@ -7874,70 +7874,70 @@ li a.navigation-settings-icon {
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
-/* line 510, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 512, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation.collapsed .navigation-item-title {
   opacity: 0;
 }
-/* line 515, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 517, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation.collapsed .navigation-items div {
   border: transparent !important;
   padding: 0 !important;
   margin: 0 !important;
   line-height: 0;
 }
-/* line 522, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 524, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation.collapsed .navigation-items a {
   padding: 0;
 }
-/* line 526, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 528, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation.collapsed .navigation-items .navigation-items-list {
   opacity: 0;
   display: none;
 }
-/* line 532, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 534, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation.collapsed li {
   padding: 0;
 }
-/* line 536, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 538, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation.collapsed .navigation-item-icon {
   margin-left: 15px;
   padding-left: 0px;
   line-height: 50px;
   vertical-align: middle;
 }
-/* line 543, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 545, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation.collapsed footer {
   padding-left: 15px;
   cursor: pointer;
   height: 51px;
   overflow: hidden;
 }
-/* line 549, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 551, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation.collapsed footer * {
   opacity: 0;
   height: 0px;
   margin: 0px;
 }
-/* line 555, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 557, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation.collapsed footer .user {
   opacity: 1;
   height: 20px;
 }
-/* line 559, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 561, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation.collapsed footer .user .pic {
   opacity: 1;
   height: 20px;
 }
-/* line 567, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 569, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation.collapsed .navigation-content .wrapper {
   margin-bottom: -51px;
 }
-/* line 569, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 571, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation.collapsed .navigation-content .wrapper:after {
   height: 61px;
 }
 
-/* line 576, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 578, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-tooltip {
   position: absolute;
   height: 30px;
@@ -7951,7 +7951,7 @@ li a.navigation-settings-icon {
   border-radius: 2px;
   z-index: 1000;
 }
-/* line 589, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 591, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-tooltip::before {
   content: ' ';
   position: absolute;
@@ -7964,7 +7964,7 @@ li a.navigation-settings-icon {
   border-right: 10px solid #21272E;
 }
 
-/* line 602, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 604, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-data-container {
   -moz-transition: width 0.4s ease-in-out;
   -o-transition: width 0.4s ease-in-out;
@@ -7975,7 +7975,7 @@ li a.navigation-settings-icon {
   height: 100%;
 }
 
-/* line 610, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 612, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation {
   -moz-transition: width 0.5s;
   -o-transition: width 0.5s;
@@ -7983,7 +7983,7 @@ li a.navigation-settings-icon {
   transition: width 0.5s;
 }
 
-/* line 614, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 616, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation footer,
 .navigation footer > *,
 .navigation .wrapper,
@@ -7995,7 +7995,7 @@ li a.navigation-settings-icon {
   transition: all 0.5s;
 }
 
-/* line 622, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 624, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-items {
   -moz-transition: all 0, opacity 0.5s, background 0.5s;
   -o-transition: all 0, opacity 0.5s, background 0.5s;
@@ -8003,14 +8003,14 @@ li a.navigation-settings-icon {
   transition: all 0, opacity 0.5s, background 0.5s;
 }
 
-/* line 626, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 628, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-header {
   -moz-transition: padding 0.5s;
   -o-transition: padding 0.5s;
   -webkit-transition: padding 0.5s;
   transition: padding 0.5s;
 }
-/* line 629, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 631, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-header .navigation-header-title {
   -moz-transition: opacity 0.5s;
   -o-transition: opacity 0.5s;
@@ -8018,14 +8018,14 @@ li a.navigation-settings-icon {
   transition: opacity 0.5s;
 }
 
-/* line 634, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 636, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-search {
   -moz-transition: margin 0.5s;
   -o-transition: margin 0.5s;
   -webkit-transition: margin 0.5s;
   transition: margin 0.5s;
 }
-/* line 636, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 638, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-search input {
   -moz-transition: width 0.5s;
   -o-transition: width 0.5s;
@@ -8033,7 +8033,7 @@ li a.navigation-settings-icon {
   transition: width 0.5s;
 }
 
-/* line 641, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 643, ../../bower_components/husky/scss/modules/navigation.scss */
 .section-headline,
 .section-headline * {
   -moz-transition: all 0.5s;
@@ -8042,7 +8042,7 @@ li a.navigation-settings-icon {
   transition: all 0.5s;
 }
 
-/* line 646, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 648, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation-item-title {
   -moz-transition: opacity 0.5s;
   -o-transition: opacity 0.5s;
@@ -8050,7 +8050,7 @@ li a.navigation-settings-icon {
   transition: opacity 0.5s;
 }
 
-/* line 650, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 652, ../../bower_components/husky/scss/modules/navigation.scss */
 .search-icon {
   -moz-transition: color 0.5s;
   -o-transition: color 0.5s;
@@ -8058,7 +8058,7 @@ li a.navigation-settings-icon {
   transition: color 0.5s;
 }
 
-/* line 655, ../../bower_components/husky/scss/modules/navigation.scss */
+/* line 657, ../../bower_components/husky/scss/modules/navigation.scss */
 .navigation:not(.collapsed) * {
   opacity: 1;
 }
