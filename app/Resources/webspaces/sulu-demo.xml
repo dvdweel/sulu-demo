@@ -11,8 +11,8 @@
     </localizations>
 
     <default-templates>
-        <default-template type="page">test</default-template>
-        <default-template type="home">homepage</default-template>
+        <default-template type="page">default</default-template>
+        <default-template type="home">overwiew</default-template>
     </default-templates>
 
     <templates>
@@ -35,7 +35,7 @@
     <portals>
         <portal>
             <name>sulu demo</name>
-            <key>suludemo</key>
+            <key>sulu-demo</key>
 
             <environments>
                 <environment type="prod">
