@@ -1,6 +1,6 @@
 # Sulu-Demo
 
-Welkom bij de Sulu-Demo. Deze demo is bedoeld om verschillende aanpassingen te maken en te testen.
+Welcome to the Sulu-Demo. This demo is used to test different changes.
 
 ## Installatie
 
@@ -19,7 +19,7 @@ sudo chmod +a "`whoami` allow delete,write,append,file_inherit,directory_inherit
 
 __Sulu:__
 
-- Kleuren variables
+- Color variables
 - Images variables
 
 __Husky:__
@@ -28,4 +28,4 @@ __Husky:__
 
 __Algemeen:__
 
-- Alles wordt ingeladen in main.css inclusief husky. Deze wordt alleen nog maar ingeladen in de index.
+- Everything is loaded in main.css including husky. The file main.css will be loaded in the index.
