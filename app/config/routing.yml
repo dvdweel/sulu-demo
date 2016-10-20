@@ -1,0 +1,5 @@
+connect_holland_sulu_dashboard:
+    resource: "@ConnectHollandSuluDashboardBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
