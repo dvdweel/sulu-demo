@@ -10,9 +10,11 @@
         <localization language="en" default="true"/>
     </localizations>
 
+    <theme>default</theme>
+
     <default-templates>
         <default-template type="page">default</default-template>
-        <default-template type="home">overwiew</default-template>
+        <default-template type="home">homepage</default-template>
     </default-templates>
 
     <templates>

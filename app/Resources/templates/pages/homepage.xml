@@ -12,7 +12,6 @@
     <meta>
         <title lang="en">Homepage</title>
         <title lang="de">Startseite</title>
-        <title lang="nl">Homepage</title>
     </meta>
 
     <properties>
@@ -22,7 +21,6 @@
                     <meta>
                         <title lang="en">Title</title>
                         <title lang="de">Titel</title>
-                        <title lang="nl">Titel</title>
                     </meta>
                     <params>
                         <param name="headline" value="true"/>
@@ -35,7 +33,6 @@
                     <meta>
                         <title lang="en">Resourcelocator</title>
                         <title lang="de">Adresse</title>
-                        <title lang="nl">Adres</title>
                     </meta>
 
                     <tag name="sulu.rlp"/>
@@ -47,20 +44,7 @@
             <meta>
                 <title lang="en">Article</title>
                 <title lang="de">Artikel</title>
-                <title lang="nl">Artikel</title>
-            </meta>
-        </property>
-
-
-        <property name="description" type="text_editor">
-            <meta>
-                <title lang="en">Description</title>
-                <title lang="de">Description</title>
-                <title lang="nl">Beschrijving</title>
             </meta>
         </property>
     </properties>
 </template>
-
-
-

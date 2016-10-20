@@ -140,3 +140,10 @@ dubture_f_fmpeg:
 services:
     jms_serializer.cache_naming_strategy: "@sulu_core.serialize_caching_strategy"
 
+
+liip_theme:
+    themes: ["default"]
+    active_theme: "default"
+
+
+
