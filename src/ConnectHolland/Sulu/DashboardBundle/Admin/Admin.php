@@ -19,11 +19,11 @@ class Admin extends SuluAdmin
 
         $section = new NavigationItem('navigation.webspaces');
 
-        $global = new NavigationItem('bundle.test');
+        $global = new NavigationItem('navigation.global-content');
         $section->addChild($global);
 
         $news = new NavigationItem('navigation.news');
-        $news->setAction('example/news');
+        $news->setAction('connectholland/dashboard');
         $global->addChild($news);
 
         $rootNavigationItem->addChild($section);
@@ -31,6 +31,9 @@ class Admin extends SuluAdmin
         $this->setNavigation(new Navigation($rootNavigationItem));
     }
 
-
+    public function getJsBundleName()
+    {
+        return 'connecthollandsuludashboard';
+    }
 
 }
