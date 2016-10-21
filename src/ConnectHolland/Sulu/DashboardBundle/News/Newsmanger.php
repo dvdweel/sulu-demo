@@ -1,7 +1,7 @@
 <?php
 namespace ConnectHolland\Sulu\DashboardBundle\News;
 use Doctrine\ORM\EntityManagerInterface;
-use Example\NewsBundle\Entity\NewsItem;
+use Connectholland\Sulu\DashboardBundle\Entity\NewsItem;
 class NewsManager
 {
     /**

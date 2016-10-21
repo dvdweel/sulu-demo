@@ -22,7 +22,7 @@ class Admin extends SuluAdmin
         $global = new NavigationItem('navigation.global-content');
         $section->addChild($global);
 
-        $news = new NavigationItem('navigation.news');
+        $news = new NavigationItem('navigation.dashboard');
         $news->setAction('connectholland/dashboard');
         $global->addChild($news);
 

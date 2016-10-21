@@ -1,6 +1,6 @@
 <?php
 namespace ConnectHolland\Sulu\DashboardBundle\Controller;
-use Example\NewsBundle\News\NewsManager;
+use ConnectHolland\Sulu\DashboardBundle\News\NewsManager;
 use FOS\RestBundle\Controller\Annotations\Get;
 use FOS\RestBundle\Controller\FOSRestController;
 use Sulu\Component\Rest\ListBuilder\Doctrine\FieldDescriptor\DoctrineFieldDescriptor;
@@ -137,7 +137,7 @@ class NewsController extends FOSRestController
      */
     private function getManager()
     {
-        return $this->get('example_news.manager');
+        return $this->get('connecthollandsuludashboard.manager');
     }
     /**
      * Flushes database.
