@@ -15,7 +15,11 @@ sudo chmod +a "$HTTPDUSER allow delete,write,append,file_inherit,directory_inher
 sudo chmod +a "`whoami` allow delete,write,append,file_inherit,directory_inherit" var/cache var/logs var/uploads var/uploads/* web/uploads web/uploads/* var/indexes var/sessions var/sessions/*
 ```
 
-## Aanpassingen
+## Changes
+
+__Information:__
+
+- Everything is loaded in main.css including husky. The file main.css will be loaded in the index.
 
 __Sulu:__
 
@@ -26,6 +30,6 @@ __Husky:__
 
 - Logo variable
 
-__Algemeen:__
+_Test Bundle:_
 
-- Everything is loaded in main.css including husky. The file main.css will be loaded in the index.
+- There is a test bundle included in this demo. More information about this bundle can be found here: http://blog.sulu.io/how-to-develop-a-bundle-in-the-sulu-admin-1
