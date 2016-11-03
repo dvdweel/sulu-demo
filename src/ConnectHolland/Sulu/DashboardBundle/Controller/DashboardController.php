@@ -1,20 +1,18 @@
 <?php
 namespace ConnectHolland\Sulu\DashboardBundle\Controller;
-use ConnectHolland\Sulu\DashboardBundle\News\NewsManager;
+
+use ConnectHolland\Sulu\DashboardBundle\Dashboard\DashboardManager;
 use FOS\RestBundle\Controller\Annotations\Get;
 use FOS\RestBundle\Controller\FOSRestController;
 use Sulu\Component\Rest\ListBuilder\Doctrine\FieldDescriptor\DoctrineFieldDescriptor;
 use Sulu\Component\Rest\ListBuilder\ListRepresentation;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-class NewsController extends FOSRestController
+
+class DashboardController extends FOSRestController
 {
-    const ENTITY_NAME = 'ConnectHollandSuluDashboardBundle:NewsItem';
-    /**
-     * Returns array of existing field-descriptors.
-     *
-     * @return array
-     */
+    const ENTITY_NAME = 'ConnectHollandSuluDashboardBundle:DashboardItem';
+
     private function getFieldDescriptors()
     {
         return [
@@ -36,108 +34,99 @@ class NewsController extends FOSRestController
                 'content',
                 'content',
                 self::ENTITY_NAME,
-                'news.content'
+                'dashboard.content'
             )
         ];
     }
-    /**
-     * Returns all fields that can be used by list.
-     *
-     * @FOS\RestBundle\Controller\Annotations\Get("news/fields")
-     *
-     * @return Response
-     */
-    public function getNewsFieldsAction()
+
+    public function getDashboardFieldsAction()
     {
         return $this->handleView($this->view(array_values($this->getFieldDescriptors())));
     }
-    /**
-     * Shows all news-items
-     *
-     * @param Request $request
-     *
-     * @Get("news")
-     *
-     * @return \Symfony\Component\HttpFoundation\Response
-     */
-    public function getNewsListAction(Request $request)
+
+    public function getDashboardListAction(Request $request)
     {
         $restHelper = $this->get('sulu_core.doctrine_rest_helper');
         $factory = $this->get('sulu_core.doctrine_list_builder_factory');
+
         $listBuilder = $factory->create(self::ENTITY_NAME);
         $restHelper->initializeListBuilder($listBuilder, $this->getFieldDescriptors());
         $results = $listBuilder->execute();
+
         $list = new ListRepresentation(
             $results,
-            'news-items',
-            'get_news_list',
+            'dashboard-items',
+            'get_dashboard_list',
             $request->query->all(),
             $listBuilder->getCurrentPage(),
             $listBuilder->getLimit(),
             $listBuilder->count()
         );
+
         $view = $this->view($list, 200);
+
         return $this->handleView($view);
     }
+
     /**
-     * Returns a single news-item identified by id.
+     * Returns a single dashboard-item identified by id.
      *
      * @param int $id
      *
      * @return Response
      */
-    public function getNewsAction($id)
+    public function getDashboardAction($id)
     {
-        $newsItem = $this->getManager()->read($id);
-        return $this->handleView($this->view($newsItem));
+        $dashboardItem = $this->getManager()->read($id);
+        return $this->handleView($this->view($dashboardItem));
     }
     /**
-     * Create a new news-item and returns it.
+     * Create a new dashboard-item and returns it.
      *
      * @param Request $request
      *
      * @return Response
      */
-    public function postNewsAction(Request $request)
+    public function postDashboardAction(Request $request)
     {
-        $newsItem = $this->getManager()->create($request->request->all());
+        $dashboardItem = $this->getManager()->create($request->request->all());
         $this->flush();
-        return $this->handleView($this->view($newsItem));
+        return $this->handleView($this->view($dashboardItem));
     }
     /**
-     * Update a news-item with given id and returns it.
+     * Update a dashboard-item with given id and returns it.
      *
      * @param Request $request
      *
      * @return Response
      */
-    public function putNewsAction($id, Request $request)
+    public function putDashboardAction($id, Request $request)
     {
-        $newsItem = $this->getManager()->update($id, $request->request->all());
+        $dashboardItem = $this->getManager()->update($id, $request->request->all());
         $this->flush();
-        return $this->handleView($this->view($newsItem));
+        return $this->handleView($this->view($dashboardItem));
     }
     /**
-     * Delete news-item.
+     * Delete dashboard-item.
      *
      * @param int $id
      *
      * @return Response
      */
-    public function deleteNewsAction($id)
+    public function deleteDashboardAction($id)
     {
         $this->getManager()->delete($id);
         $this->flush();
         return $this->handleView($this->view());
     }
     /**
-     * Returns service for news-items.
+     * Returns service for dashboard-items.
      *
-     * @return NewsManager
+     * @return DashboardManager
      */
     private function getManager()
     {
-        return $this->get('connecthollandsuludashboard.manager');
+        return $this->get('example_dashboard.manager');
     }
     /**
      * Flushes database.

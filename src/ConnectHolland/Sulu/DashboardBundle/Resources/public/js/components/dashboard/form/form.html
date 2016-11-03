@@ -1,0 +1,10 @@
+<form id="dashboard-form" class="grid">
+    <div class="form-group grid-row">
+        <label for="dashboard-title"><%= translations.title %></label>
+        <input type="text" id="dashboard-title" name="title" class="form-element input-bold required" data-mapper-property="title" data-validation-required="true"/>
+    </div>
+    <div class="form-group">
+        <label for="dashboard-content"><%= translations.content %></label>
+        <textarea id="dashboard-content" name="content" class="form-element" data-mapper-property="content"></textarea>
+    </div>
+</form>

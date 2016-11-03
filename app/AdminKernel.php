@@ -39,7 +39,6 @@ class AdminKernel extends AbstractKernel
         $bundles[] = new Sulu\Bundle\AdminBundle\SuluAdminBundle();
         $bundles[] = new Sulu\Bundle\CollaborationBundle\SuluCollaborationBundle();
         $bundles[] = new Sulu\Bundle\PreviewBundle\SuluPreviewBundle();
-        $bundles[] = new ConnectHolland\Sulu\DashboardBundle\ConnectHollandSuluDashboardBundle();
 
         if (in_array($this->getEnvironment(), ['dev', 'test'])) {
             $bundles[] = new Sulu\Bundle\GeneratorBundle\SuluGeneratorBundle();

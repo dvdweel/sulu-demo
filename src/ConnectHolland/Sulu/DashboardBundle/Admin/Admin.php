@@ -17,17 +17,17 @@ class Admin extends SuluAdmin
     {
         $rootNavigationItem = new NavigationItem($title);
 
-        $section = new NavigationItem('navigation.webspaces');
-
-        $global = new NavigationItem('navigation.global-content');
-        $section->addChild($global);
-
-        $news = new NavigationItem('navigation.dashboard');
-        $news->setAction('connectholland/dashboard');
-        $global->addChild($news);
+        $section = new NavigationItem('dashboard');
+        $section->setPosition(1);
 
         $rootNavigationItem->addChild($section);
 
+        $dashboard = new NavigationItem('Dashboard');
+        $dashboard->setAction('connectholland/dashboard');
+        $dashboard->setPosition(10);
+        $dashboard->setIcon('dashboard');
+
+        $section->addChild($dashboard);
         $this->setNavigation(new Navigation($rootNavigationItem));
     }
 
